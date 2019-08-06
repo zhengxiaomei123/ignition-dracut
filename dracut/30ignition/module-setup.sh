@@ -85,6 +85,6 @@ installkernel() {
     # We definitely need this one in the initrd to support Ignition cfgs on qemu
     # if available
     if has_fw_cfg_module; then
-        instmods -c qemu_fw_cfg
+        echo "DEBUG: installkernel() instmods -c qemu_fw_cfg"
     fi
 }
